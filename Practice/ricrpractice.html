@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RICR College</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #f5f7fb;
+      }
+
+      .navbar {
+        background: #0d1b2a;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #fff !important;
+      }
+
+      .logo {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .hero {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://images.unsplash.com/photo-1523240795612-9a054b0db644");
+        background-size: cover;
+        color: #fff;
+        padding: 100px 20px;
+        text-align: center;
+      }
+
+      .card {
+        border: none;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+      }
+
+      .form-box {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer {
+        background: #0d1b2a;
+        color: #ccc;
+        padding: 50px 0 20px;
+      }
+      .footer h5 {
+        color: #fff;
+        margin-bottom: 15px;
+      }
+      .footer a {
+        color: #ccc;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        color: #fff;
+      }
+      .footer-bottom {
+        border-top: 1px solid #444;
+        margin-top: 20px;
+        padding-top: 15px;
+        text-align: center;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR WITH LOGO -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+            class="logo"
+          />
+          <span>RICR College</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          ☰
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#login">Student Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#enquiry">Enquiry</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <h1>Welcome to RICR College</h1>
+      <p>Your Future Starts Here</p>
+      <a href="#enquiry" class="btn btn-warning">Apply Now</a>
+    </section>
+
+    <!-- COURSES -->
+    <section class="container my-5" id="courses">
+      <h2 class="text-center mb-4">Our Courses</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card p-3 text-center">
+            <h4>B.Tech</h4>
+            <p>Engineering program</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card p-3 text-center">
+            <h4>BCA</h4>
+            <p>Computer Applications</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card p-3 text-center">
+            <h4>MBA</h4>
+            <p>Business Administration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGIN -->
+    <section class="container my-5" id="login">
+      <h2 class="text-center mb-4">Student Login</h2>
+      <div class="form-box mx-auto" style="max-width: 400px">
+        <form>
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" required />
+          </div>
+          <button class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ENQUIRY -->
+    <section class="container my-5" id="enquiry">
+      <h2 class="text-center mb-4">Enquiry Form</h2>
+      <div class="form-box">
+        <form>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Mobile Number"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <select class="form-select">
+              <option>Select Course</option>
+              <option>B.Tech</option>
+              <option>BCA</option>
+              <option>MBA</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" placeholder="Message"></textarea>
+          </div>
+          <button class="btn btn-success w-100">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About RICR</h5>
+            <p>
+              RICR College is committed to excellence in education and building
+              future leaders.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#login">Login</a></li>
+              <li><a href="#enquiry">Enquiry</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <p>Email: info@ricrcollege.com</p>
+            <p>Phone: +91 9876543210</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 RICR College | Designed by Chandan 🚀</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

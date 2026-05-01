@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+/* Background */
+body {
+  background: #0a0a8f;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+#outerDiv {
+  display: flex;
+  gap: 80px;
+}
+
+/* Card */
+.card {
+  background: #cfd8dc;
+  padding: 40px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px black;
+}
+
+/* Heading */
+.card h1 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+/* Form item */
+.form-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin: 20px 0;
+  padding-bottom: 5px;
+}
+
+/* Icons */
+.form-item i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Input */
+.form-item input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  padding: 5px;
+}
+
+/* Eye icon */
+.form-item .bi-eye {
+  cursor: pointer;
+}
+
+/* Remember section */
+.remember {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #0000ff, #1a1aff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px black;
+}
+
+/* Button hover */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Paragraph */
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Links */
+a {
+  color: blue;
+  text-decoration: underline;
+}

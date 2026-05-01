@@ -1,0 +1,41 @@
+:root {
+  --main-color: green;
+  --sub-color: red;
+  --text-color: brown;
+}
+
+#login {
+  background-color: var(--main-color);
+}
+
+#register {
+  background-color: var(--sub-color);
+}
+
+h1 {
+  color: var(--main-color);
+}
+
+h3 {
+  color: var(--sub-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+th {
+  color: var(--main-color);
+}
+
+#row {
+  color: var(--main-color);
+}
+
+td {
+  color: var(--text-color);
+}
+
+.data {
+  color: var(--text-color);
+}
