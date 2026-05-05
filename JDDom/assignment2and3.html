@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignments</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <!-- Assignment 1 -->
+      <div class="box">
+        <input
+          type="text"
+          id="name1"
+          placeholder="Name"
+          class="form-control mb-2"
+        />
+        <input
+          type="text"
+          id="city1"
+          placeholder="City"
+          class="form-control mb-2"
+        />
+        <button class="btn btn-primary" onclick="showA1()">Submit</button>
+
+        <div id="result1"></div>
+      </div>
+
+      <!-- Assignment 2 -->
+      <div class="box mt-4" id="a2box">
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          class="form-control mb-2"
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          class="form-control mb-2"
+        />
+        <button class="btn btn-success" onclick="showA2()">Submit</button>
+
+        <div id="result2"></div>
+      </div>
+
+      <!-- Assignment 3 -->
+      <div class="box mt-4">
+        <input
+          type="text"
+          id="fname"
+          placeholder="First Name"
+          class="form-control mb-2"
+        />
+        <input
+          type="text"
+          id="lname"
+          placeholder="Last Name"
+          class="form-control mb-2"
+        />
+        <button class="btn btn-dark" onclick="showA3()">Submit</button>
+
+        <div id="result3"></div>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
