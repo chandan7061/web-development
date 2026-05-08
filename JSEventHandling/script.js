@@ -17,3 +17,13 @@ function Bulb4On() {
 function Bulb1Off() {
   document.getElementById("bulb1").style.backgroundColor = "white";
 }
+
+document
+  .getElementById("bulbColor")
+  .addEventListener("change", ChangeBulbColor);
+
+function ChangeBulbColor() {
+  const color = document.getElementById("bulbColor").value;
+
+  document.getElementById("bulb1").style.backgroundColor = color;
+}
