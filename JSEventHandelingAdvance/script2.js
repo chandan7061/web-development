@@ -23,3 +23,12 @@ document.querySelector("form").addEventListener("reset", (event) => {
 
   confirm("Are Your Sure") && window.location.reload();
 });
+
+document.addEventListener("keydown", (event) => {
+  let keyPress = event.key;
+  console.log(keyPress);
+
+  if (keyPress === "Escape") {
+    alert("Escape Key Pressed");
+  }
+});
