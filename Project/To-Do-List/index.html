@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="bg-primary text-white text-center p-3">
+      <h1>To Do List</h1>
+    </div>
+    <div class="container mt-5">
+      <div class="row g-2">
+        <div class="col-md-9">
+          <input
+            type="text"
+            id="taskInput"
+            class="form-control"
+            placeholder="Add your new task"
+          />
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary w-100" onclick="AddTask()">
+            <i class="bi bi-plus-lg"></i>
+
+            Add Task
+          </button>
+        </div>
+      </div>
+
+      <ol class="list-group list-group-numbered mt-4" id="taskList"></ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
