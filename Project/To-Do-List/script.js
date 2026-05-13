@@ -1,20 +1,15 @@
 function AddTask() {
-  
-  const taskInput =
-  document.getElementById("taskInput");
+  const taskInput = document.getElementById("taskInput");
 
-  const task =
-  taskInput.value.trim();
+  const task = taskInput.value.trim();
 
   if (task === "") {
     return;
   }
 
-  const taskList =
-  document.getElementById("taskList");
+  const taskList = document.getElementById("taskList");
 
-  const li =
-  document.createElement("li");
+  const li = document.createElement("li");
 
   li.className =
     "list-group-item d-flex justify-content-between align-items-center";
@@ -43,6 +38,5 @@ function AddTask() {
 }
 
 function DeleteTask(button) {
-
   button.parentElement.remove();
 }
