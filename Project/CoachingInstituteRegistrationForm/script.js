@@ -1,6 +1,4 @@
 function validateForm() {
-  // Input Values
-
   let fullName = document.getElementById("fullName").value.trim();
   let email = document.getElementById("email").value.trim();
   let mobile = document.getElementById("mobile").value.trim();
