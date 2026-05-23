@@ -3,8 +3,8 @@ async function GetNewJoke() {
   const response = await fetch(API_URL);
 
   const data = await response.json();
-
+  console.log(data);
   document.getElementById("setup").innerText = data.joke || data.setup;
 
-  document.getElementById("delivery").innerText = data.delivery || "";
+  document.getElementById("punchline").innerText = data.punchline || "";
 }
