@@ -4,18 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Weather App</h1>
+      <h1>🌤️ Weather App</h1>
 
-      <input type="text" id="cityName" placeholder="Enter city name" />
+      <div class="search-box">
+        <input type="text" id="cityName" placeholder="Enter city..." />
+        <button onclick="getWeather()">Search</button>
+      </div>
 
-      <button onclick="getWeather()">Get Weather</button>
+      <div class="weather-main">
+        <h2 id="city">Bhopal</h2>
 
-      <div class="weather-box">
-        <label>Temp : <span id="Temperature">30</span>ºC</label>
+        <div class="weather-icon">☀</div>
+
+        <div class="temp"><span id="Temperature">30</span>°C</div>
+
+        <div class="description" id="weatherType">Clear Sky</div>
+      </div>
+
+      <div class="details">
+        <div class="card">
+          <h3>💨 Wind Speed</h3>
+          <p id="wind">2 km/h</p>
+        </div>
+
+        <div class="card">
+          <h3>💧 Humidity</h3>
+          <p id="humidity">70%</p>
+        </div>
+
+        <div class="card">
+          <h3>🌡 Max Temp</h3>
+          <p id="maxTemp">35°C</p>
+        </div>
+
+        <div class="card">
+          <h3>❄ Min Temp</h3>
+          <p id="minTemp">24°C</p>
+        </div>
       </div>
     </div>
 

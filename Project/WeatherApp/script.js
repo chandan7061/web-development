@@ -5,27 +5,35 @@ async function getWeather() {
 
   const { Lattitude, Longitude } = await getGeoLocation(cityName);
 
-  //   console.log({ Lattitude, Longitude });
-
   const WEATHER_API = `https://api.openweathermap.org/data/2.5/weather?lat=${Lattitude}&lon=${Longitude}&appid=${API_KEY}`;
 
   const response = await fetch(WEATHER_API);
   const data = await response.json();
 
-  //console.log(data);
+  const temperature = (data.main.temp - 273.15).toFixed(1);
+  const maxTemp = (data.main.temp_max - 273.15).toFixed(1);
+  const minTemp = (data.main.temp_min - 273.15).toFixed(1);
 
-  const temperature = data.main.temp - 273.15;
+  document.getElementById("city").innerText = data.name;
+  document.getElementById("Temperature").innerText = temperature;
 
-  document.getElementById("Temperature").innerText = temperature.toFixed(2);
+  document.getElementById("weatherType").innerText =
+    data.weather[0].description;
+
+  document.getElementById("wind").innerText = data.wind.speed + " km/h";
+
+  document.getElementById("humidity").innerText = data.main.humidity + "%";
+
+  document.getElementById("maxTemp").innerText = maxTemp + "°C";
+
+  document.getElementById("minTemp").innerText = minTemp + "°C";
 }
 
 async function getGeoLocation(city) {
-  const GEO_LOC_API = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
+  const GEO_LOC_API = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
 
   const response = await fetch(GEO_LOC_API);
   const data = await response.json();
-
-  //   console.log(data);
 
   const Lattitude = data[0].lat;
   const Longitude = data[0].lon;

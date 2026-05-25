@@ -1,0 +1,102 @@
+[
+  {
+    "Country": "UNITED STATES",
+    "Currency_Code": "USD",
+    "Country_Code": "US"
+  },
+  {
+    "Country": "INDIA",
+    "Currency_Code": "INR",
+    "Country_Code": "IN"
+  },
+  {
+    "Country": "UNITED KINGDOM",
+    "Currency_Code": "GBP",
+    "Country_Code": "GB"
+  },
+  {
+    "Country": "EUROPE",
+    "Currency_Code": "EUR",
+    "Country_Code": "EU"
+  },
+  {
+    "Country": "JAPAN",
+    "Currency_Code": "JPY",
+    "Country_Code": "JP"
+  },
+  {
+    "Country": "CHINA",
+    "Currency_Code": "CNY",
+    "Country_Code": "CN"
+  },
+  {
+    "Country": "RUSSIA",
+    "Currency_Code": "RUB",
+    "Country_Code": "RU"
+  },
+  {
+    "Country": "CANADA",
+    "Currency_Code": "CAD",
+    "Country_Code": "CA"
+  },
+  {
+    "Country": "AUSTRALIA",
+    "Currency_Code": "AUD",
+    "Country_Code": "AU"
+  },
+  {
+    "Country": "BRAZIL",
+    "Currency_Code": "BRL",
+    "Country_Code": "BR"
+  },
+  {
+    "Country": "PAKISTAN",
+    "Currency_Code": "PKR",
+    "Country_Code": "PK"
+  },
+  {
+    "Country": "BANGLADESH",
+    "Currency_Code": "BDT",
+    "Country_Code": "BD"
+  },
+  {
+    "Country": "NEPAL",
+    "Currency_Code": "NPR",
+    "Country_Code": "NP"
+  },
+  {
+    "Country": "SRI LANKA",
+    "Currency_Code": "LKR",
+    "Country_Code": "LK"
+  },
+  {
+    "Country": "UAE",
+    "Currency_Code": "AED",
+    "Country_Code": "AE"
+  },
+  {
+    "Country": "SAUDI ARABIA",
+    "Currency_Code": "SAR",
+    "Country_Code": "SA"
+  },
+  {
+    "Country": "SINGAPORE",
+    "Currency_Code": "SGD",
+    "Country_Code": "SG"
+  },
+  {
+    "Country": "THAILAND",
+    "Currency_Code": "THB",
+    "Country_Code": "TH"
+  },
+  {
+    "Country": "SOUTH KOREA",
+    "Currency_Code": "KRW",
+    "Country_Code": "KR"
+  },
+  {
+    "Country": "AFGHANISTAN",
+    "Currency_Code": "AFN",
+    "Country_Code": "AF"
+  }
+]
