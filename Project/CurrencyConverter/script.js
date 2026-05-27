@@ -45,7 +45,6 @@ function loadCountries() {
     country2.appendChild(option2);
   });
 
-  // Default
   country1.value = "USD,US";
   country2.value = "INR,IN";
 
@@ -53,7 +52,6 @@ function loadCountries() {
   updateFlag(country2, flag2);
 }
 
-// Update Flags
 function updateFlag(select, image) {
   const countryCode = select.value.split(",")[1];
 
@@ -65,7 +63,6 @@ function updateFlag(select, image) {
   };
 }
 
-// Change Events
 country1.addEventListener("change", () => {
   updateFlag(country1, flag1);
 });
@@ -74,7 +71,6 @@ country2.addEventListener("change", () => {
   updateFlag(country2, flag2);
 });
 
-// Convert Currency
 convertBtn.addEventListener("click", async () => {
   const amount = orgAmount.value;
 
@@ -116,7 +112,6 @@ convertBtn.addEventListener("click", async () => {
   }
 });
 
-// Swap
 swapBtn.addEventListener("click", () => {
   let temp = country1.value;
 
@@ -128,5 +123,4 @@ swapBtn.addEventListener("click", () => {
   updateFlag(country2, flag2);
 });
 
-// Start
 loadCountries();
