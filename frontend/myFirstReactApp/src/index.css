@@ -1,9 +1,11 @@
-#abcd {
-  background-color: brown;
+a {
+  text-decoration: none !important;
 }
-#header {
-  background-color: blueviolet;
+a:hover {
+  text-decoration: underline !important;
 }
-#footer {
-  background-color: aqua;
+container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
