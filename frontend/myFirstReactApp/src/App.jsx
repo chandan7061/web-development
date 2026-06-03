@@ -5,8 +5,6 @@ import Product from "./pages/Product";
 import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import { FaWifi } from "react-icons/fa";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
