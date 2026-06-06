@@ -75,12 +75,16 @@ function Register() {
             />
             <br />
 
-            <div className="float-end">
+            <div className="text-end">
               <button type="submit" className="btn btn-primary">
                 Register
               </button>
             </div>
           </form>
+          <hr />
+          <p className="text-center">
+            Already have an account? <a href="/login">Login here</a>
+          </p>  
         </div>
       </div>
     </>
