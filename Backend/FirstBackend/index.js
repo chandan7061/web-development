@@ -2,20 +2,21 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import express from "express";
+import authRouter from "./routers/auth.route.js";
+import publicRouter from "./routers/public.route.js";
 
 const app = express();
 
-app.get("/",(req,res)=>{
-    console.log("Default Get API Hit");
-    res.json({message:"Welcome to my first backend project"});
-})
+app.use("/auth", authRouter);
+app.use("/public", publicRouter);
 
-app.post("/login",(req,res)=>{
-    res.json({message:"Login"});
-})
+const port = process.env.PORT || 3000;
 
-const port = process.env.PORT || 5000;
+app.get("/", (req, res) => {
+  console.log("Default Get API Hit");
+  res.json({ message: "Welcome to my first backend project" });
+});
 
-app.listen(port,()=>{
-    console.log("Server Started on port",port);
+app.listen(port, () => {
+  console.log("Server Started on port", port);
 });
