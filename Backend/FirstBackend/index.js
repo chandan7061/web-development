@@ -4,6 +4,7 @@ dotenv.config();
 import express from "express";
 import authRouter from "./src/routers/auth.route.js";
 import publicRouter from "./src/routers/public.route.js";
+import connectDB from "./src/config/dbConnection.config.js";
 
 const app = express();
 
@@ -19,5 +20,6 @@ app.get("/", (req, res) => {
 
 app.listen(port, () => {
   console.log("Server Started on port", port);
+  connectDB();
 });
  
