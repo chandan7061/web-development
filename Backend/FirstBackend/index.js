@@ -13,19 +13,17 @@ app.use(express.json());
 app.use("/auth", AuthRouter);
 app.use("/public", PublicRouter);
 
-//Default API
 app.get("/", (req, res) => {
   console.log("Default Get API Hit");
   res.json({ message: "Welcome to my first backend Project" });
 });
 
 app.use((err, req, res, next) => {
-
   const ErrMessage = err.message || "Internal Server Error";
   const ErrStatus = err.status || 500;
 
   res.status(ErrStatus).json({ message: ErrMessage });
-}
+});
 
 const port = process.env.PORT || 5000;
 
